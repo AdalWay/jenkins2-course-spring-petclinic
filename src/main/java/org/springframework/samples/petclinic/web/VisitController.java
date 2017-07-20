@@ -78,7 +78,7 @@ public class VisitController {
         return "pets/createOrUpdateVisitForm";
     }
 
-    // Spring MVC calls method loadPetWithVisit(...) before processNewVisitForm is called
+    // Spring MVC calls method loadPetWithVisit(...) before processNewVisitForm is called testing
     @RequestMapping(value = "/owners/{ownerId}/pets/{petId}/visits/new", method = RequestMethod.POST)
     public String processNewVisitForm(@Valid Visit visit, BindingResult result) {
         if (result.hasErrors()) {
